@@ -31,25 +31,27 @@ body {
 
 }
 
-.dotes{
+.dotes {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
 .dote {
-border: 1px solid black;
-border-radius: 50%;
-width: 20px;
-height: 20px;
-margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
 }
 
 .active {
     background-color: black;
 }
 
-.arrow-right, .arrow-left {
+.arrow-right,
+.arrow-left {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -57,13 +59,32 @@ margin: 0 5px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
 }
-.arrow-right{
+
+.arrow-right {
     right: 10px;
 }
 
-.arrow-left{
-left: 10px;
+.arrow-left {
+    left: 10px;
+}
+
+@media (max-width: 650px) {
+    body {
+        width: auto;
+    }
+
+    .slider {
+        width: 300px;
+    }
+
+    .slide {
+        min-width: 290px;
+    }
+
+
+
+
 }
