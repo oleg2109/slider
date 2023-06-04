@@ -1,0 +1,69 @@
+body {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.slider {
+    width: 800px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.slidetrack {
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    min-width: 790px;
+    height: 190px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 5px;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.dotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.dote {
+border: 1px solid black;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+margin: 0 5px;
+}
+
+.active {
+    background-color: black;
+}
+
+.arrow-right, .arrow-left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+.arrow-right{
+    right: 10px;
+}
+
+.arrow-left{
+left: 10px;
+}
