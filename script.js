@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }], 500);
             };
             shift = wid * i;
-            slidertrack.style = `transform: translateX(${-shift}px)`;
+            translateSlide();
 
 
         } else if (dif > wid / 20) {
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }], 500);
             }
             shift = wid * i;
-            slidertrack.style = `transform: translateX(${-shift}px)`;
+            translateSlide();
             console.log(shift);
 
 
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         shift = wid * i;
         console.log(i);
-        slidertrack.style = `transform: translateX(${-shift}px)`;
+        translateSlide();
     }
 
     function toright() {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         shift = wid * i;
         console.log(i);
-        slidertrack.style = `transform: translateX(${-shift}px)`;
+        translateSlide();
     }
 
     function noswipe() {
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, {
             transform: `translateX(${-shift}px)`
         }], 200);
-        slidertrack.style = `transform: translateX(${-shift}px)`;
+        translateSlide();
     }
 
     function setTimer() {
@@ -191,6 +191,10 @@ document.addEventListener('DOMContentLoaded', () => {
             changeSlide();
         }, 5000);
     }
+
+   function translateSlide(){
+    slidertrack.style = `transform: translateX(${-shift}px)`;
+   }
 
     slidertrack.ondragstart = function () {
         return false;
